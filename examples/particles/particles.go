@@ -50,7 +50,7 @@ func (world *TestWorld) Init(sim *gart.Simulator) {
 			Life:     lifespan,
 			Lifespan: lifespan,
 			Rotation: rand.Float64()*0.3 - 0.15,
-			Color:    gart.HSLColor{h, s, l},
+			Color:    gart.HSLColor{H: h, S: s, L: l},
 		}
 
 		world.particles.PushBack(&particle)
